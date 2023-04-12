@@ -5,8 +5,6 @@ Music-Separation-as-a-service (MSaaS)
 ## Overview
 Created a kubernetes cluster that provides a REST API for automatic music separation service and prepares the different tracks for retrieval.
 
-You may [want to bookmark this kubernetes "cheat sheet"](https://kubernetes.io/docs/reference/kubectl/cheatsheet/).
-
 Containers deployed provide the following services:
 + **rest** - the REST frontend will accept API requests for analysis and handle queries concerning MP3's. The REST worker will queue tasks to workers using `redis` queues.
 + **worker** - Worker nodes will receive work requests to analyze MP3's and cache results in a cloud object store (probably Min.io).
