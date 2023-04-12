@@ -7,7 +7,7 @@ Created a kubernetes cluster that provides a REST API for automatic music separa
 
 Containers deployed provide the following services:
 + **rest** - the REST frontend will accept API requests for analysis and handle queries concerning MP3's. The REST worker will queue tasks to workers using `redis` queues.
-+ **worker** - Worker nodes will receive work requests to analyze MP3's and cache results in a cloud object store (probably Min.io).
++ **worker** - Worker nodes will receive work requests to analyze MP3's and cache results in a cloud object store (here, Min.io).
 + **redis** - a Redis deployment and service to provide a redis database server.
 
 ### Waveform Source Separation Analysis
