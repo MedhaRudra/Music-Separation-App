@@ -15,7 +15,7 @@ The worker uses [open source waveform source separation analysis](https://github
 
 ### Cloud object service
 
-Rather than send the large MP3 files through Redis, I am using the Min.io object storage system (or other object store) to store the song contents ***and*** the output of the waveform separation. 
+Rather than send the large MP3 files through Redis, I am using the Min.io object storage system to store the song contents ***and*** the output of the waveform separation. 
 
 In my solution, I have a single 'bucket' called "queue" that holds the objects containing MP3 songs to process and another bucket called "output" to hold the results ready for download:
 ![buckets](images/buckets.png)
